@@ -47,8 +47,7 @@ public class ClassTest {
     @DisplayName("Surname is a string")
     void person_surname_test() {
         Person person = new Person("Alejandra", "12345678L",1999, "Garcia");
-        assertThat(person, is (instanceOf(String.class)));
-        
+        assertThat(person.getSurname(), is (instanceOf(String.class)));
     }
 
 }
