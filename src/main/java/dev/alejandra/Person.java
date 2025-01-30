@@ -5,12 +5,14 @@ public class Person {
     private String name;
     private String Id;
     private int yearOfBirth;    
+    private String Surname;
     
     // Constructor
-    public Person(String name, String Id, int yearOfBirth) {
+    public Person(String name, String Id, int yearOfBirth, String Surname) {
         this.name = name;
         this.Id = Id;
         this.yearOfBirth = yearOfBirth;
+        this.Surname = Surname;
     }
 
 
@@ -23,5 +25,8 @@ public class Person {
     }
     public int getYearOfBirth() {
         return this.yearOfBirth;
+    }
+    public String getSurname() {
+        return this.Surname;
     }
 }
