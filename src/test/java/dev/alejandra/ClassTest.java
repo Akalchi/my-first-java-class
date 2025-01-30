@@ -22,5 +22,11 @@ public class ClassTest {
         assertThat(person.getName(), is (instanceOf(String.class)));
     }
     
+    @Test
+    @DisplayName("Person ID is a string")
+    void person_ID_test() {
+        Person person = new Person("12345678L");
+        assertThat(person.getId(), is (instanceOf(String.class)));
+    }
 
 }
