@@ -10,7 +10,7 @@ public class ClassTest {
     @Test
     @DisplayName("Person class test")
     void person_test() {
-        Person person = new Person("Alejandra");
+        Person person = new Person("Alejandra", "12345678L");
         assertThat(person, is (instanceOf(Person.class)));
         
     }
@@ -18,14 +18,14 @@ public class ClassTest {
     @Test
     @DisplayName("Person name is a string")
     void person_name_test() {
-        Person person = new Person("perro");
+        Person person = new Person("perro", "12345678L");
         assertThat(person.getName(), is (instanceOf(String.class)));
     }
     
     @Test
     @DisplayName("Person ID is a string")
     void person_ID_test() {
-        Person person = new Person("12345678L");
+        Person person = new Person("gato", "12345678L");
         assertThat(person.getId(), is (instanceOf(String.class)));
     }
 
