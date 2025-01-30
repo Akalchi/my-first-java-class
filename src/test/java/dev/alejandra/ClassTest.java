@@ -29,4 +29,11 @@ public class ClassTest {
         assertThat(person.getId(), is (instanceOf(String.class)));
     }
 
+    @Test
+    @DisplayName("ID has 9 characters")
+    void person_ID_lenght_test() {
+        Person person = new Person("gato", "12345678L");
+        assertThat(person.getId().length(), is(9));
+    }
+
 }
