@@ -15,4 +15,11 @@ public class ClassTest {
         
     }
 
+    @Test
+    @DisplayName("Person name is a string")
+    void person_name_test() {
+        Person person = new Person();
+        assertThat(person.getName(), is (instanceOf(String.class)));
+    }
+
 }
